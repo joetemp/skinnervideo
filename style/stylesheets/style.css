@@ -342,10 +342,11 @@ html, body {
 }
 
 header {
-  float: left;
+  position: absolute;
   height: 100%;
   background-color: #ff7575;
   width: 10%;
+  z-index: 1000;
 }
 
 ul {
@@ -358,9 +359,8 @@ li {
 
 #home {
   position: relative;
-  left: 10%;
   height: 100%;
-  width: 90%;
+  width: 100%;
   background: #37aefa;
 }
 
