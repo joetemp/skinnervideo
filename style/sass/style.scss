@@ -2,51 +2,32 @@
 @import "normalize";
 
 // Variables
-$orange: #ff7f00;
-$alt-orange: #ffa35c;
 $blue: #37aefa;
-$light-blue: #7fcbfb;
-$yellow: #fef96c;
 $red: #ff7575;
-$green: #6ffdbf;
-$light-green: #a3fdd6;
 
 html, body{
 	height: 100%;
 }
 
 header{
-	position: relative;	
+	float: left;
 	height: 100%;
 	background-color: $red;
-	filter: drop-shadow(0px 3px 5px rgba(black, 0.1));	
-	z-index: 1000;
 	width: 10%;
 }
 
 ul{
 	list-style: none;
-	position: absolute;
-	right: 10%;
-	bottom: 0;
 }
 
 li{
 	display: inline-block;
-	padding: 0 5px 2px 5px;
-	height: auto;
-	width: auto;
-	font-family: 'Roboto', sans-serif;	
-	text-transform: uppercase;
-	font-weight: 300;
 }
 
 #home{
 	position: relative;
-	height: 80%;
-	width: 100%;
-	background-image: url(../../assets/img/raccoons-high.jpg);
-	background-size: cover;
-	// Can't apply blur filter here. It blurs every single thing in the home section.
-	right: 0;
+	left: 10%;
+	height: 100%;
+	width: 90%;
+	background: $blue;
 }
