@@ -12,7 +12,7 @@ html, body{
 header{
 	position: absolute;
 	height: 100%;
-	background-color: $red;
+	background-color: rgba(white, 0.2); 
 	width: 10%;
 	z-index: 1000;
 }
@@ -29,5 +29,6 @@ li{
 	position: relative;
 	height: 100%;
 	width: 100%;
-	background: $blue;
+	background-image: url("../../assets);../../assets/citra.png");
+	background-size: cover;
 }

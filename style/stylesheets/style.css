@@ -344,7 +344,7 @@ html, body {
 header {
   position: absolute;
   height: 100%;
-  background-color: #ff7575;
+  background-color: rgba(255, 255, 255, 0.2);
   width: 10%;
   z-index: 1000;
 }
@@ -361,7 +361,8 @@ li {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #37aefa;
+  background-image: url("../../assets);../../assets/citra.png");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
