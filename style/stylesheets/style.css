@@ -363,6 +363,7 @@ li {
   width: 100%;
   background-image: url("../../assets);../../assets/citra.png");
   background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */
