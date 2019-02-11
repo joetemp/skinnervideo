@@ -19,10 +19,11 @@ body{
 }
 
 header{
-	grid-row: two / three;
+	grid-area: header;
 	display: grid;
 	grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 30% [fifth] 5% [end];
-	grid-template-rows: [top] auto [middle] 30% [bottom];
+	// For some reason can't make the top portion auto?
+	grid-template-rows: [top] 70% [middle] 30% [bottom];
 	background: rgba(red, 0.3);
 }
 
@@ -31,24 +32,37 @@ ul{
 }
 
 #logo{
-	grid-column: second / third;
-	grid-row: top / bottom; 
+	grid-area: logo;
 	max-height: 100%;
 	background: rgba(black, 0.3);
 }
 
+// All set for flexbox here.
 nav{
-	grid-column: fourth / fifth;
-	grid-row: middle / bottom;
+	grid-area: nav;
 	background: rgba(black, 0.3);
 }
 
 main{
-	grid-row: three / four;
+	grid-area: main;
 	background-color: rgba(aquamarine, 0.3);
 }
 
 footer{
-	grid-row: four / five;
+	grid-area: footer;
 	background: rgba(purple, 0.3);
+}
+
+body{
+	grid-template-areas: 
+		"."
+		"header"
+		"main"
+		"footer";
+}
+
+header{
+	grid-template-areas:
+		". logo . . ."
+		". lgoo . nav ."; 
 }

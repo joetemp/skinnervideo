@@ -351,10 +351,10 @@ body {
 }
 
 header {
-  grid-row: two/three;
+  grid-area: header;
   display: grid;
   grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 30% [fifth] 5% [end];
-  grid-template-rows: [top] auto [middle] 30% [bottom];
+  grid-template-rows: [top] 70% [middle] 30% [bottom];
   background: rgba(255, 0, 0, 0.3);
 }
 
@@ -363,26 +363,32 @@ ul {
 }
 
 #logo {
-  grid-column: second/third;
-  grid-row: top/bottom;
+  grid-area: logo;
   max-height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
 
 nav {
-  grid-column: fourth/fifth;
-  grid-row: middle/bottom;
+  grid-area: nav;
   background: rgba(0, 0, 0, 0.3);
 }
 
 main {
-  grid-row: three/four;
+  grid-area: main;
   background-color: rgba(127, 255, 212, 0.3);
 }
 
 footer {
-  grid-row: four/five;
+  grid-area: footer;
   background: rgba(128, 0, 128, 0.3);
+}
+
+body {
+  grid-template-areas: "." "header" "main" "footer";
+}
+
+header {
+  grid-template-areas: ". logo . . ." ". lgoo . nav .";
 }
 
 /*# sourceMappingURL=style.css.map */
