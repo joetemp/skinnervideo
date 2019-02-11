@@ -354,6 +354,8 @@ header {
   grid-row: two/three;
   display: grid;
   grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 30% [fifth] 5% [end];
+  grid-template-rows: [top] auto [middle] 30% [bottom];
+  background: rgba(255, 0, 0, 0.3);
 }
 
 ul {
@@ -361,20 +363,26 @@ ul {
 }
 
 #logo {
-  height: 100%;
   grid-column: second/third;
+  grid-row: top/bottom;
+  max-height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 nav {
   grid-column: fourth/fifth;
+  grid-row: middle/bottom;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 main {
   grid-row: three/four;
+  background-color: rgba(127, 255, 212, 0.3);
 }
 
 footer {
   grid-row: four/five;
+  background: rgba(128, 0, 128, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
