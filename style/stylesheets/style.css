@@ -344,7 +344,7 @@ html, body {
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: [one] 1% [two] 18% [three] auto [four] 5% [five];
+  grid-template-rows: [one] 10px [two] 18% [three] auto [four] 5% [five];
   background-image: url("../../assets);../../assets/citra.png");
   background-size: cover;
   background-position: center;
