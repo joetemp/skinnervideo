@@ -10,7 +10,7 @@ html, body{
 body{
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: [one] 10px [two] 18% [three] auto [four] 5% [five];
+	grid-template-rows: 10px 18% auto 5%;
 	background-image: url("../../assets);../../assets/citra.png");
 	background-size: cover;
 	background-position: center;
@@ -39,7 +39,7 @@ header{
 nav{
 	grid-area: nav;
 	display: grid;
-	grid-template-rows: [nav-top] auto [nav-middle] 50px [nav-bottom];
+	grid-template-rows: auto 50px;
 	background: rgba(orange, 0.3);
 	grid-template-areas:
 		"."
