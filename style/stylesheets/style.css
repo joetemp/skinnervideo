@@ -388,9 +388,10 @@ li {
   width: 100px;
   text-transform: uppercase;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-#current {
+.current {
   background-image: url("../../assets/brush.png");
   background-size: 100% 100%;
   background-position: center;
