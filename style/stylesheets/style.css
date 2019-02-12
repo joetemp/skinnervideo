@@ -348,32 +348,35 @@ body {
   background-image: url("../../assets);../../assets/citra.png");
   background-size: cover;
   background-position: center;
+  grid-template-areas: "." "header" "main" "footer";
 }
 
 header {
-  grid-row: two/three;
+  grid-area: header;
   display: grid;
-  grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 600px [fifth] 5% [end];
+  grid-template-columns: 5% 10% auto 600px 5%;
   background: rgba(255, 0, 0, 0.3);
+  grid-template-areas: ". logo . nav .";
 }
 
 #logo {
   height: 100%;
-  grid-column: second/third;
+  grid-area: logo;
   background: rgba(0, 0, 0, 0.3);
 }
 
 nav {
+  grid-area: nav;
   display: grid;
   grid-template-rows: [nav-top] auto [nav-middle] 50px [nav-bottom];
-  grid-column: fourth/fifth;
   background: rgba(255, 165, 0, 0.3);
+  grid-template-areas: "." "ul";
 }
 
 ul {
+  grid-area: ul;
   margin: 0;
   list-style: none;
-  grid-row: nav-middle/nav-bottom;
   background-color: blue;
 }
 
@@ -382,12 +385,12 @@ li {
 }
 
 main {
-  grid-row: three/four;
+  grid-area: main;
   background-color: rgba(0, 0, 255, 0.3);
 }
 
 footer {
-  grid-row: four/five;
+  grid-area: footer;
   background: rgba(0, 128, 0, 0.3);
 }
 
