@@ -353,12 +353,8 @@ body {
 header {
   grid-row: two/three;
   display: grid;
-  grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 30% [fifth] 5% [end];
+  grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 600px [fifth] 5% [end];
   background: rgba(255, 0, 0, 0.3);
-}
-
-ul {
-  list-style: none;
 }
 
 #logo {
@@ -368,8 +364,21 @@ ul {
 }
 
 nav {
+  display: grid;
+  grid-template-rows: [nav-top] auto [nav-middle] 50px [nav-bottom];
   grid-column: fourth/fifth;
   background: rgba(255, 165, 0, 0.3);
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  grid-row: nav-middle/nav-bottom;
+  background-color: blue;
+}
+
+li {
+  display: inline-block;
 }
 
 main {
