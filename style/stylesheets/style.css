@@ -354,7 +354,7 @@ body {
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 5% 10% auto 600px 5%;
+  grid-template-columns: 5% 10% auto 500px 5%;
   background: rgba(255, 0, 0, 0.3);
   grid-template-areas: ". logo . nav .";
 }
@@ -374,14 +374,20 @@ nav {
 }
 
 ul {
-  grid-area: ul;
+  padding: 0;
   margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  grid-area: ul;
   list-style: none;
   background-color: blue;
 }
 
 li {
-  display: inline-block;
+  height: 100%;
+  width: 100px;
+  background: yellow;
 }
 
 main {
