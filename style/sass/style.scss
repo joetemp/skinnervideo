@@ -69,7 +69,10 @@ li{
 	// margin: auto;
 	text-transform: uppercase;
 	color: white;
-	font-family: 'Roboto', sans-serif;
+	// font-family: 'Roboto', sans-serif;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .current{
@@ -112,7 +115,9 @@ h2{
 	font-size: 4.5em;
 	color: white;
 	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 footer{
