@@ -363,7 +363,8 @@ header {
   overflow: hidden;
 }
 
-#header-bg {
+header::before {
+  content: "";
   position: absolute;
   top: 0;
   height: 100%;

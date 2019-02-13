@@ -35,11 +35,13 @@ header{
 	overflow: hidden;
 }
 
-#header-bg{
+header::before{
+	content: '';
 	position: absolute;
 	top: 0;
 	height: 100%;
 	width: 100%;
+	// background-color: red;
 	background-image: url("../../assets/citra.png");
 	background-size: cover;
 	background-position: center;	
