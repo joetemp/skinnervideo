@@ -30,6 +30,7 @@ header{
 		". logo . nav .";
 	box-shadow: 0px 3px 10px 3px rgba(black, 0.2);
 	padding: 10px 0 15px 0;
+	z-index: 1000;
 }
 
 #logo{
@@ -86,13 +87,21 @@ main{
 	grid-template-areas: 
 		". . ."
 		". content .";
-	// background-color: rgba(blue, 0.3);
+	background-color: rgba(blue, 0.3);
+	overflow: hidden;
 }
 
 #content{
-	height: 100%;
+	min-height: 100%;
 	grid-area: content;
 	background: white;
+	box-shadow: 0px 0px 10px 3px rgba(black, 0.2);
+}
+
+h2{
+	grid-area: heading;
+	margin: 0;
+	background: red;
 }
 
 footer{
