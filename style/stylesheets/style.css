@@ -344,11 +344,11 @@ html, body {
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 18% auto 5%;
+  grid-template-rows: 18% auto;
   background-image: url("../../assets/citra.png");
   background-size: cover;
   background-position: center;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "main";
 }
 
 header {
@@ -401,12 +401,26 @@ li {
 }
 
 main {
+  display: grid;
   grid-area: main;
+  grid-template-rows: 20% auto;
+  grid-template-columns: auto 900px auto;
+  grid-template-areas: ". . ." ". content .";
+}
+
+#content {
+  height: 100%;
+  grid-area: content;
+  background: white;
 }
 
 footer {
-  grid-area: footer;
+  position: fixed;
+  height: 5%;
+  width: 100%;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
 }
 
 /*# sourceMappingURL=style.css.map */
