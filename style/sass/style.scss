@@ -89,7 +89,7 @@ main{
 	grid-template-areas: 
 		". content .";
 	// background-color: rgba(blue, 0.3);
-	overflow: hidden;
+	overflow-y: scroll;
 }
 
 #content{
@@ -102,7 +102,7 @@ article{
 	height: 100%;
 	width: 100%;
 	background: white;
-	margin-top: 20vh; 
+	margin-top: 10vh; 
 	box-shadow: 0px 0px 10px 3px rgba(black, 0.2);
 }
 
