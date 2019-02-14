@@ -465,6 +465,7 @@ p {
   padding: 60px 80px 60px 80px;
   font-size: 1.25em;
   line-height: 1.5em;
+  text-align: justify;
   /*
   font-family: kazimir, sans-serif;
   font-weight: 300;
