@@ -481,7 +481,7 @@ footer {
   grid-template-columns: 5% auto auto 5%;
   grid-template-areas: ". copyright social .";
   position: fixed;
-  height: 5%;
+  height: 5vh;
   width: 100%;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
@@ -492,14 +492,30 @@ footer {
   margin: 0;
   padding: 0;
   grid-area: copyright;
-  background: rgba(255, 0, 0, 0.3);
+  line-height: 5vh;
+  font-size: 1em;
+  color: #666;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 #social {
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   grid-area: social;
-  background: rgba(0, 0, 255, 0.3);
+}
+#social li {
+  width: auto;
+  padding: 0;
+  line-height: 5.5vh;
+  font-size: 2em;
+  margin-right: 30px;
+}
+#social li:last-of-type {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
