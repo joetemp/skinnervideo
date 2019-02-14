@@ -28,6 +28,7 @@ header{
 	top: 0;
 	grid-area: header; 
 	display: grid;
+	// Let's revisit the width of the logo column... or if it needs a width at all.
 	grid-template-columns: 5% 10% auto 500px 5%;
 	// background: rgba(red, 0.3);
 	grid-template-areas: 
@@ -164,6 +165,10 @@ p{
 }
 
 footer{
+	display: grid;
+	grid-template-columns: 5% auto auto 5%; 
+	grid-template-areas: 
+		". copyright social .";
 	position: fixed;
 	height: 5%;
 	width: 100%;
@@ -171,4 +176,14 @@ footer{
 	// background: rgba(green, 0.3);
 	background: rgba(black, 0.6);
 	z-index: 1000; 
+}
+
+#copyright{
+	grid-area: copyright;
+	background: rgba(red, 0.3);
+}
+
+#social{
+	grid-area: social;
+	background: rgba(blue, 0.3);
 }

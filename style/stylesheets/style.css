@@ -476,12 +476,25 @@ p {
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 5% auto auto 5%;
+  grid-template-areas: ". copyright social .";
   position: fixed;
   height: 5%;
   width: 100%;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
+}
+
+#copyright {
+  grid-area: copyright;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+#social {
+  grid-area: social;
+  background: rgba(0, 0, 255, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
