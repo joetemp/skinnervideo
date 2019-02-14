@@ -489,11 +489,15 @@ footer {
 }
 
 #copyright {
+  margin: 0;
+  padding: 0;
   grid-area: copyright;
   background: rgba(255, 0, 0, 0.3);
 }
 
 #social {
+  margin: 0;
+  padding: 0;
   grid-area: social;
   background: rgba(0, 0, 255, 0.3);
 }

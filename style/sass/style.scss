@@ -180,11 +180,15 @@ footer{
 }
 
 #copyright{
+	margin: 0;
+	padding: 0;
 	grid-area: copyright;
 	background: rgba(red, 0.3);
 }
 
 #social{
+	margin: 0;
+	padding: 0;
 	grid-area: social;
 	background: rgba(blue, 0.3);
 }
