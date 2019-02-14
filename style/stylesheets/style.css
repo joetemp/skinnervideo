@@ -342,17 +342,18 @@ html, body {
 }
 
 body {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 18% auto;
   background-image: url("../../assets/citra.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   grid-template-areas: "header" "main";
 }
 
 header {
-  position: relative;
+  position: fixed;
+  height: 18%;
+  width: 100%;
+  top: 0;
   grid-area: header;
   display: grid;
   grid-template-columns: 5% 10% auto 500px 5%;
@@ -423,7 +424,6 @@ main {
   grid-area: main;
   grid-template-columns: auto 900px auto;
   grid-template-areas: ". content .";
-  overflow-y: scroll;
 }
 
 #content {
@@ -440,7 +440,7 @@ article {
 }
 
 article:first-of-type {
-  margin-top: 20vh;
+  margin-top: 32vh;
 }
 
 h2 {
