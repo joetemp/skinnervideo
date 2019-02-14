@@ -117,8 +117,6 @@ main{
 }
 
 article{
-	height: 100%;
-	width: 100%;
 	background: white;
 	margin-top: 10vh; 
 	box-shadow: 0px 0px 10px 3px rgba(black, 0.2);
@@ -127,6 +125,10 @@ article{
 article:first-of-type{
 	margin-top: calc(32vh + 50px);
 	//margin-top: 16vh;
+}
+
+article:last-of-type{
+	margin-bottom: 10vh;
 }
 
 h2{
@@ -140,6 +142,24 @@ h2{
 	text-transform: uppercase;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+}
+
+p{
+	margin: 0; 
+	padding: 60px 80px 60px 80px; 
+	font-size: 1.25em;
+	line-height: 1.5em;
+
+	/*
+	font-family: kazimir, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	*/
+
+	font-family: kulturista-web, serif;
+	font-weight: 300;
 	font-style: normal;
 }
 
