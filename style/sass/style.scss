@@ -125,7 +125,8 @@ article{
 }
 
 article:first-of-type{
-	margin-top: 32vh;
+	margin-top: calc(32vh + 50px);
+	//margin-top: 16vh;
 }
 
 h2{
