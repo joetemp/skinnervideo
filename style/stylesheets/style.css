@@ -370,7 +370,7 @@ header::before {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../../assets/citra.png");
+  background-color: rgba(255, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -380,12 +380,14 @@ header::before {
 #logo {
   height: 100%;
   grid-area: logo;
+  background: rgba(0, 0, 255, 0.5);
 }
 
 nav {
   grid-area: nav;
   display: grid;
   grid-template-rows: auto 30px;
+  background: rgba(255, 165, 0, 0.3);
   grid-template-areas: "." "ul";
 }
 
@@ -397,6 +399,7 @@ ul {
   justify-content: space-between;
   grid-area: ul;
   list-style: none;
+  background-color: green;
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
@@ -410,6 +413,7 @@ li {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
+  background: purple;
 }
 
 .current {
@@ -512,10 +516,13 @@ footer {
   padding: 0;
   line-height: 5.5vh;
   font-size: 2em;
-  margin-right: 30px;
+  margin-left: 30px;
 }
-#social li:last-of-type {
-  margin: 0;
+
+@media all and (max-width: 1000px) {
+  main {
+    grid-template-columns: auto 90% auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

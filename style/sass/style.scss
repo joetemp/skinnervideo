@@ -31,7 +31,6 @@ header{
 	display: grid;
 	// Let's revisit the width of the logo column... or if it needs a width at all.
 	grid-template-columns: 5% 10% auto 500px 5%;
-	// background: rgba(red, 0.3);
 	grid-template-areas: 
 		". logo . nav .";
 	box-shadow: 0px 3px 10px 3px rgba(black, 0.2);
@@ -46,8 +45,8 @@ header::before{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	// background-color: red;
-	background-image: url("../../assets/citra.png");
+	background-color: rgba(red, 0.3);
+	// background-image: url("../../assets/citra.png");
 	background-size: cover;
 	background-position: center;	
 	background-attachment: fixed;
@@ -57,14 +56,14 @@ header::before{
 #logo{
 	height: 100%; 
 	grid-area: logo;
-	// background: rgba(black, 0.3);
+	background: rgba(blue, 0.5);
 }
 
 nav{
 	grid-area: nav;
 	display: grid;
 	grid-template-rows: auto 30px;
-	//background: rgba(orange, 0.3);
+	background: rgba(orange, 0.3);
 	grid-template-areas:
 		"."
 		"ul";
@@ -76,9 +75,10 @@ ul{
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
+	// justify-content: flex-end;
 	grid-area: ul;
 	list-style: none;
-	//background-color: blue;
+	background-color: green;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 30px;
@@ -87,13 +87,14 @@ ul{
 li{
 	height: 100%;
 	width: 100px;
-	// margin: auto;
+	// margin-left: 30px;
 	text-transform: uppercase;
 	color: white;
 	// font-family: 'Roboto', sans-serif;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	background: purple;
 }
 
 .current{
@@ -208,10 +209,12 @@ footer{
 		// These are more centered at 5.5
 		line-height: 5.5vh;
 		font-size: 2em;
-		margin-right: 30px;
+		margin-left: 30px;
 	}
+}
 
-	li:last-of-type{
-		margin: 0;
+@media all and (max-width: 1000px) {
+	main{
+		grid-template-columns: auto 90% auto;
 	}
 }
