@@ -352,6 +352,7 @@ body {
 header {
   position: fixed;
   height: 16%;
+  min-height: 150px;
   width: 100%;
   top: 0;
   grid-area: header;

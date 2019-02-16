@@ -22,9 +22,11 @@ body{
 }
 
 header{
-	// position: relative;
+	// Might be a good option for mobile.
+	// position: absolute;	
 	position: fixed;
 	height: 16%;
+	min-height: 150px;
 	width: 100%;
 	top: 0;
 	grid-area: header; 
