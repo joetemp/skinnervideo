@@ -347,6 +347,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   grid-template-areas: "header" "main";
+  overflow-x: hidden;
 }
 
 header {
