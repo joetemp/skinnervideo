@@ -45,8 +45,19 @@ header::before{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	// background-color: rgba(red, 0.3);
-	background-image: url("../../assets/citra.png");
+	background-image: url(../../assets/citra.png);
+
+	/*
+	// Tinted image
+	background: 
+		linear-gradient(
+    		rgba(black, 0.45), 
+    		rgba(black, 0.45)
+    	),
+		url(../../assets/citra.png);
+	*/
+
+
 	background-size: cover;
 	background-position: center;	
 	background-attachment: fixed;
