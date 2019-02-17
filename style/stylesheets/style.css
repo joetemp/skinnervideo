@@ -599,7 +599,7 @@ footer {
 
   footer {
     height: 40px;
-    grid-template-columns: 5% auto auto 5%;
+    grid-template-columns: 2.5% auto auto 2.5%;
     background: rgba(0, 0, 0, 0.85);
   }
 
