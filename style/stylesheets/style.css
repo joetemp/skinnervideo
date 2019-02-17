@@ -353,7 +353,7 @@ body {
 header {
   position: fixed;
   height: 16%;
-  min-height: 150px;
+  min-height: 100px;
   width: 100%;
   top: 0;
   grid-area: header;
@@ -533,12 +533,69 @@ footer {
 
 @media all and (max-width: 1000px) {
   main {
-    grid-template-columns: auto 90% auto;
+    grid-template-columns: auto 95% auto;
   }
 }
 @media all and (max-width: 800px) {
   header {
+    grid-template-columns: 2.5% auto auto 2.5%;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/citra.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../assets/citra.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1000;
+  }
+
+  ul {
+    margin-left: 5%;
+    align-items: center;
+  }
+
+  li {
+    width: 45%;
+  }
+
+  #logo {
+    height: 100%;
+  }
+
+  p {
+    padding: 20px 20px 20px 20px;
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 2em;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  footer {
+    height: 40px;
     grid-template-columns: 5% auto auto 5%;
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  #copyright {
+    line-height: 40px;
+    color: #ccc;
+  }
+
+  #social {
+    line-height: 40px;
+  }
+  #social li {
+    padding-top: 2px;
+    margin-left: 15px;
   }
 }
 
