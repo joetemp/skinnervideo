@@ -300,7 +300,9 @@ footer{
 
 	li{
 		// width: 95px;
-		width: 45%;
+		width: 50%;
+		// This seems like an elegant solution. 
+		max-width: 100px;
 	}
 
 	#logo{

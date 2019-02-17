@@ -578,7 +578,8 @@ footer {
   }
 
   li {
-    width: 45%;
+    width: 50%;
+    max-width: 100px;
   }
 
   #logo {
