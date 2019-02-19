@@ -574,7 +574,7 @@ footer {
   }
 
   ul {
-    margin-left: 5%;
+    margin-left: 15%;
   }
 
   main {
@@ -637,6 +637,7 @@ footer {
   }
 
   li {
+    width: 50%;
     max-width: 100px;
   }
 
