@@ -356,6 +356,10 @@ footer{
 		z-index: -1000;
 	}
 
+	footer{
+		background: rgba(black, 0.85);
+	}
+
 }
 
 /////////////////
@@ -436,7 +440,6 @@ footer{
 	footer{
 	height: 40px;
 	grid-template-columns: 2.5% auto auto 2.5%; 
-	background: rgba(black, 0.85);
 	}
 
 	#copyright{
