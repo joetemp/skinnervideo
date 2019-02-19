@@ -259,8 +259,21 @@ footer{
 }
 
 @media all and (max-width: 1000px) {
+
+	header{
+		grid-template-columns: 2.5% auto auto 2.5%;
+	}
+
+	ul {
+		margin-left: 20%;
+	}
+
 	main{
 		grid-template-columns: auto 95% auto;
+	}
+
+	footer{
+			grid-template-columns: 2.5% auto auto 2.5%; 
 	}
 }
 
