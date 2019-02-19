@@ -601,7 +601,7 @@ footer {
     margin-left: 40px;
   }
 }
-@media all and (max-width: 800px) {
+@media all and (max-width: 700px) {
   body::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;

@@ -334,6 +334,14 @@ footer{
 
 @media all and (max-width: 800px) {
 
+}
+
+/////////////////
+// 700px Media //
+/////////////////
+
+@media all and (max-width: 700px) {
+
 	body::-webkit-scrollbar
 	{
 	    width: 10px;
@@ -424,12 +432,3 @@ footer{
 		}
 	}
 }
-
-/////////////////
-// 700px Media //
-/////////////////
-
-@media all and (max-width: 700px) {
-
-}
-
