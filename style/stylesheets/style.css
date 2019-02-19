@@ -601,6 +601,21 @@ footer {
     margin-left: 40px;
   }
 }
+@media all and (max-width: 800px) {
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/citra.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../assets/citra.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1000;
+  }
+}
 @media all and (max-width: 700px) {
   body::-webkit-scrollbar {
     width: 10px;
