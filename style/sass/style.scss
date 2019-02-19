@@ -258,6 +258,10 @@ footer{
 	}
 }
 
+//////////////////
+// 1024px Media //
+//////////////////
+
 @media all and (max-width: 1024px) {
 
 	body::-webkit-scrollbar-thumb
@@ -323,6 +327,10 @@ footer{
 		}
 	}
 }
+
+/////////////////
+// 800px Media //
+/////////////////
 
 @media all and (max-width: 800px) {
 
@@ -416,3 +424,12 @@ footer{
 		}
 	}
 }
+
+/////////////////
+// 700px Media //
+/////////////////
+
+@media all and (max-width: 700px) {
+
+}
+
