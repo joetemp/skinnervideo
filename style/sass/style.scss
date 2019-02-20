@@ -1,8 +1,18 @@
-// Imports
+/////////////
+// Imports //
+/////////////
+
 @import "normalize";
 
-// Variables
+///////////////
+// Variables //
+///////////////
+
 $red: #e82637;
+
+//////////
+// Body //
+//////////
 
 html, body{
 	height: 100%;
@@ -43,6 +53,9 @@ body::-webkit-scrollbar-thumb
     background-color: #222;
 }
 
+////////////
+// Header //
+////////////
 
 header{
 	position: fixed;
@@ -122,6 +135,10 @@ li{
 	color: black;
 }
 
+//////////
+// Main //
+//////////
+
 main{
 	display: grid;
 	grid-area: main;
@@ -177,6 +194,10 @@ p{
 	font-style: normal;
 }
 
+////////////
+// Footer //
+////////////
+
 footer{
 	display: grid;
 	grid-template-columns: 5% auto auto 5%; 
@@ -225,9 +246,9 @@ footer{
 	}
 }
 
-//////////////////
-// 1024px Media //
-//////////////////
+//////////////////////////////////////////
+// 1024px Media - iPad/Tablet Landscape //
+//////////////////////////////////////////
 
 @media all and (max-width: 1024px) {
 
@@ -267,7 +288,6 @@ footer{
 		height: 40px;
 		grid-template-columns: 2.5% auto auto 2.5%; 
 		background: rgba(black, 0.8);
-
 	}
 
 	#copyright{
@@ -286,20 +306,13 @@ footer{
 	}
 }
 
-/////////////////
-// 800px Media //
-/////////////////
+////////////////////////////////////////
+// 800px Media - iPad/Tablet Portrait //
+////////////////////////////////////////
 
 @media all and (max-width: 800px) {
 
 	header::before{
-			content: '';
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		background-image: url(../../assets/citra.png);
-
 		// Tinted image
 		background: 
 			linear-gradient(
@@ -307,11 +320,9 @@ footer{
 	    		rgba(black, 0.75)
 	    	),
 			url(../../assets/citra.png);
-
 		background-size: cover;
 		background-position: center;	
 		background-attachment: fixed;
-		z-index: -1000;
 	}
 
 	footer{
@@ -320,9 +331,9 @@ footer{
 
 }
 
-/////////////////
-// 700px Media //
-/////////////////
+/////////////////////////////////
+// 700px Media - iPhone/Mobile //
+/////////////////////////////////
 
 @media all and (max-width: 700px) {
 
@@ -339,20 +350,7 @@ footer{
 	    background-color: #3d3d3d;
 	}
 
-
-	header{
-		grid-template-columns: 2.5% auto auto 2.5%;
-		// position: absolute;
-	}
-
 	header::before{
-			content: '';
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		background-image: url(../../assets/citra.png);
-
 		// Tinted image
 		background: 
 			linear-gradient(
@@ -360,11 +358,9 @@ footer{
 	    		rgba(black, 0.8)
 	    	),
 			url(../../assets/citra.png);
-
 		background-size: cover;
 		background-position: center;	
 		background-attachment: fixed;
-		z-index: -1000;
 	}
 
 	ul{
@@ -373,7 +369,6 @@ footer{
 	}
 
 	li{
-		// width: 95px;
 		width: 50%;
 		// This seems like an elegant solution. 
 		max-width: 100px;
@@ -395,22 +390,8 @@ footer{
 		line-height: 60px;
 	}
 
-	footer{
-	height: 40px;
-	grid-template-columns: 2.5% auto auto 2.5%; 
-	}
-
-	#copyright{
-		font-size: 0.75em;
-		line-height: 40px;
-		color: #777;
-	}
-
 	#social{
-		line-height: 40px;
-
 		li{
-			padding-top: 2px;
 			margin-left: 20px;
 		}
 	}
