@@ -440,6 +440,10 @@ li {
   height: 30px;
 }
 
+li:first-of-type {
+  margin-left: 0;
+}
+
 .current {
   background-image: url("../../assets/brush.png");
   background-size: 100% 100%;
@@ -552,7 +556,7 @@ footer {
   }
 
   header {
-    grid-template-columns: 5% auto auto 5%;
+    grid-template-columns: 2.5% auto auto 2.5%;
   }
 
   header::before {
@@ -574,12 +578,12 @@ footer {
   }
 
   main {
-    grid-template-columns: auto 90% auto;
+    grid-template-columns: auto 95% auto;
   }
 
   footer {
     height: 40px;
-    grid-template-columns: 5% auto auto 5%;
+    grid-template-columns: 2.5% auto auto 2.5%;
     background: rgba(0, 0, 0, 0.8);
   }
 
@@ -612,16 +616,6 @@ footer {
     z-index: -1000;
   }
 
-  ul {
-    align-items: center;
-  }
-
-  li {
-    width: 50%;
-    margin: 0 15px 0 15px;
-    max-width: 105px;
-  }
-
   footer {
     background: rgba(0, 0, 0, 0.85);
   }
@@ -639,7 +633,7 @@ footer {
   }
 
   header {
-    grid-template-columns: 5% auto auto 5%;
+    grid-template-columns: 2.5% auto auto 2.5%;
   }
 
   header::before {
@@ -657,11 +651,13 @@ footer {
   }
 
   ul {
+    margin-left: 5%;
     align-items: center;
   }
 
   li {
-    margin: 0;
+    width: 50%;
+    max-width: 100px;
   }
 
   #logo {
@@ -681,6 +677,7 @@ footer {
 
   footer {
     height: 40px;
+    grid-template-columns: 2.5% auto auto 2.5%;
   }
 
   #copyright {
@@ -695,19 +692,6 @@ footer {
   #social li {
     padding-top: 2px;
     margin-left: 20px;
-  }
-}
-@media all and (max-width: 600px) {
-  header {
-    grid-template-columns: 2.5% auto auto 2.5%;
-  }
-
-  main {
-    grid-template-columns: auto 95% auto;
-  }
-
-  footer {
-    grid-template-columns: 2.5% auto auto 2.5%;
   }
 }
 
