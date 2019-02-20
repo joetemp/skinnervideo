@@ -469,6 +469,17 @@ main {
   min-height: 100%;
   grid-area: content;
 }
+#content section {
+  background: white;
+  margin-top: 10vh;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+}
+#content section:first-of-type {
+  margin-top: calc(32vh + 50px);
+}
+#content section:last-of-type {
+  margin-bottom: 10vh;
+}
 
 article {
   background: white;

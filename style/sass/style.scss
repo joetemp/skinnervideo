@@ -173,6 +173,20 @@ main{
 	min-height: 100%;
 	grid-area: content;
 	// background: rgba(red, 0.5);
+
+	section{
+		background: white;
+		margin-top: 10vh; 
+		box-shadow: 0px 0px 10px 3px rgba(black, 0.2);	
+	}
+
+	section:first-of-type{
+		margin-top: calc(32vh + 50px);
+	}
+
+	section:last-of-type{
+		margin-bottom: 10vh;
+	}
 }
 
 article{
