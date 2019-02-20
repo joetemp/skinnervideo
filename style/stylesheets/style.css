@@ -390,15 +390,6 @@ header::before {
   height: 100%;
   width: 100%;
   background-image: url(../../assets/citra.png);
-  /*
-  // Tinted image
-  background: 
-  	linear-gradient(
-     		rgba(black, 0.45), 
-     		rgba(black, 0.45)
-     	),
-  	url(../../assets/citra.png);
-  */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -438,10 +429,6 @@ li {
   font-weight: 400;
   font-style: normal;
   height: 30px;
-}
-
-li:first-of-type {
-  margin-left: 0;
 }
 
 .current {
@@ -498,11 +485,6 @@ p {
   font-size: 1.25em;
   line-height: 1.5em;
   text-align: justify;
-  /*
-  font-family: kazimir, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  */
   font-family: kulturista-web, serif;
   font-weight: 300;
   font-style: normal;
@@ -536,7 +518,7 @@ footer {
 #social {
   justify-content: flex-end;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   grid-area: social;
   line-height: 5.5vh;
 }
@@ -560,17 +542,10 @@ footer {
   }
 
   header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(../../assets/citra.png);
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/citra.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    z-index: -1000;
   }
 
   ul {

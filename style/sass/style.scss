@@ -9,8 +9,6 @@ html, body{
 }
 
 body{
-	// display: grid;
-	// grid-template-rows: 18% auto;
 	background-image: url("../../assets/citra.png");
 	background-size: cover;
 	background-position: center;
@@ -18,9 +16,12 @@ body{
 	grid-template-areas: 
 		"header"
 		"main";
-		// "footer";
 	overflow-x: hidden;
 }
+
+///////////////
+// Scrollbar //
+///////////////
 
 body::-webkit-scrollbar-track
 {
@@ -44,8 +45,6 @@ body::-webkit-scrollbar-thumb
 
 
 header{
-	// Might be a good option for mobile.
-	// position: absolute;	
 	position: fixed;
 	height: 16%;
 	min-height: 100px;
@@ -70,18 +69,6 @@ header::before{
 	height: 100%;
 	width: 100%;
 	background-image: url(../../assets/citra.png);
-
-	/*
-	// Tinted image
-	background: 
-		linear-gradient(
-    		rgba(black, 0.45), 
-    		rgba(black, 0.45)
-    	),
-		url(../../assets/citra.png);
-	*/
-
-
 	background-size: cover;
 	background-position: center;	
 	background-attachment: fixed;
@@ -97,10 +84,8 @@ header::before{
 nav{
 	grid-area: nav;
 	display: grid;
-	//grid-template-rows: auto 30px;
 	// background: rgba(orange, 0.3);
 	grid-template-areas:
-		//"."
 		"ul";
 }
 
@@ -109,11 +94,9 @@ ul{
 	margin: 0;
 	margin-left: 20px;
 	display: flex;
-	// flex-flow: row;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: flex-end;
-	// justify-content: flex-end;
 	grid-area: ul;
 	list-style: none;
 	// background-color: green;
@@ -130,11 +113,6 @@ li{
 	font-style: normal;
 	// background: purple;
 	height: 30px;
-	// margin-left: 30px;
-}
-
-li:first-of-type{
-	margin-left: 0;
 }
 
 .current{
@@ -167,7 +145,6 @@ article{
 
 article:first-of-type{
 	margin-top: calc(32vh + 50px);
-	//margin-top: 16vh;
 }
 
 article:last-of-type{
@@ -195,13 +172,6 @@ p{
 	font-size: 1.25em;
 	line-height: 1.5em;
 	text-align: justify;
-
-	/*
-	font-family: kazimir, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	*/
-
 	font-family: kulturista-web, serif;
 	font-weight: 300;
 	font-style: normal;
@@ -239,19 +209,16 @@ footer{
 #social{
 	justify-content: flex-end;
 	margin: 0;
-	padding: 0;
+	padding-top: 0;
 	grid-area: social;
 	// Logos look more centered at 5.5vh for some reason.
 	line-height: 5.5vh;
-	// background: yellow;
 	// background: rgba(blue, 0.3);
 
 	li{
 		height: 100%;
 		width: auto;
 		padding: 0;
-		// These are more centered at 5.5
-		// line-height: 5vh;
 		font-size: 2em;
 		margin-left: 30px;
 		// background: red;
@@ -276,13 +243,6 @@ footer{
 	}
 
 	header::before{
-			content: '';
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		background-image: url(../../assets/citra.png);
-
 		// Tinted image
 		background: 
 			linear-gradient(
@@ -290,11 +250,9 @@ footer{
 	    		rgba(black, 0.6)
 	    	),
 			url(../../assets/citra.png);
-
 		background-size: cover;
 		background-position: center;	
 		background-attachment: fixed;
-		z-index: -1000;
 	}
 
 	ul {
