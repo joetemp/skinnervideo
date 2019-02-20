@@ -134,7 +134,7 @@ li{
 }
 
 li:first-of-type{
-	margin-left: 0;
+	// margin-left: 0;
 }
 
 .current{
@@ -272,7 +272,9 @@ footer{
 	}
 
 	header{
-		grid-template-columns: 2.5% auto auto 2.5%;
+		// grid-template-columns: 2.5% auto auto 2.5%;
+		grid-template-columns: 5% auto auto 5%;
+
 	}
 
 	header::before{
@@ -302,12 +304,15 @@ footer{
 	}
 
 	main{
-		grid-template-columns: auto 95% auto;
+		// grid-template-columns: auto 95% auto;
+		grid-template-columns: auto 90% auto;
+
 	}
 
 	footer{
 		height: 40px;
-		grid-template-columns: 2.5% auto auto 2.5%; 
+		// grid-template-columns: 2.5% auto auto 2.5%; 
+		grid-template-columns: 5% auto auto 5%; 
 		background: rgba(black, 0.8);
 
 	}
@@ -356,6 +361,21 @@ footer{
 		z-index: -1000;
 	}
 
+	ul{
+		// margin-left: 5%;
+		align-items: center;
+		// width: 25%;
+		// padding: 0 10% 0 10%;
+	}
+
+	li{
+		width: 50%;
+		margin: 0 15px 0 15px;
+		// This seems like an elegant solution. Changed max-width to 105px and it forces these to align correctly. 
+		max-width: 100px;
+		// min-width: 100px;
+	}
+
 	footer{
 		background: rgba(black, 0.85);
 	}
@@ -383,7 +403,8 @@ footer{
 
 
 	header{
-		grid-template-columns: 2.5% auto auto 2.5%;
+		// grid-template-columns: 2.5% auto auto 2.5%;
+		grid-template-columns: 5% auto auto 5%;
 		// position: absolute;
 	}
 
@@ -410,15 +431,13 @@ footer{
 	}
 
 	ul{
-		margin-left: 5%;
+		// margin-left: 5%;
 		align-items: center;
+		// width: 25%;
 	}
 
 	li{
-		// width: 95px;
-		width: 50%;
-		// This seems like an elegant solution. 
-		max-width: 100px;
+		margin: 0;
 	}
 
 	#logo{
@@ -439,7 +458,7 @@ footer{
 
 	footer{
 	height: 40px;
-	grid-template-columns: 2.5% auto auto 2.5%; 
+	// grid-template-columns: 2.5% auto auto 2.5%; 
 	}
 
 	#copyright{
@@ -457,3 +476,25 @@ footer{
 		}
 	}
 }
+
+/////////////////
+// 600px Media //
+/////////////////
+
+@media all and (max-width: 600px) {
+	header{
+		grid-template-columns: 2.5% auto auto 2.5%;
+	}
+
+	main{
+		grid-template-columns: auto 95% auto;
+	}
+
+	footer{
+		grid-template-columns: 2.5% auto auto 2.5%; 
+	}
+
+}
+
+
+
