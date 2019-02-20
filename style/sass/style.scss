@@ -117,6 +117,19 @@ ul{
 	line-height: 30px;
 }
 
+a{
+	text-decoration: none;
+	display: block;
+}
+
+a:visited{
+	color: white;
+}
+
+a:hover{
+	color: $red;
+}
+
 li{
 	width: 100px;
 	text-transform: uppercase;
