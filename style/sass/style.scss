@@ -122,6 +122,10 @@ a{
 	display: block;
 }
 
+a:link{
+	color: white;
+}
+
 a:visited{
 	color: white;
 }
@@ -146,6 +150,10 @@ li{
 	background-size: 100% 100%;
 	background-position: center;
 	color: black;
+
+	a:visited{
+		color: black;
+	}
 }
 
 //////////

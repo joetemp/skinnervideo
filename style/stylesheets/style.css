@@ -426,6 +426,10 @@ a {
   display: block;
 }
 
+a:link {
+  color: white;
+}
+
 a:visited {
   color: white;
 }
@@ -448,6 +452,9 @@ li {
   background-image: url("../../assets/brush.png");
   background-size: 100% 100%;
   background-position: center;
+  color: black;
+}
+.current a:visited {
   color: black;
 }
 
