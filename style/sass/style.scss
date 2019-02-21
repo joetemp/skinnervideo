@@ -19,7 +19,7 @@ html, body{
 }
 
 body{
-	background-image: url("../../assets/citra.png");
+	background-image: url(../../assets/citra.png);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -27,6 +27,7 @@ body{
 		"header"
 		"main";
 	overflow-x: hidden;
+	background-color: black;
 }
 
 ///////////////
