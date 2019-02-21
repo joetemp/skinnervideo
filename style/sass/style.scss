@@ -89,9 +89,15 @@ header::before{
 }
 
 #logo{
-	height: 100%; 
+	// height: 100%; 
+	height: 16vh;
+	width: 16vh;
 	grid-area: logo;
 	// background: rgba(blue, 0.5);
+
+	img{
+		height: 100%;
+	}
 }
 
 nav{
@@ -408,11 +414,6 @@ footer{
 		// This seems like an elegant solution. 
 		max-width: 100px;
 	}
-
-	#logo{
-		height: 100%;
-	}
-
 
 	p{
 		padding: 20px 30px 20px 30px; 
