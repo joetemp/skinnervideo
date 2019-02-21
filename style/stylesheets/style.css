@@ -348,7 +348,7 @@ body {
   background-attachment: fixed;
   grid-template-areas: "header" "main";
   overflow-x: hidden;
-  background-color: black;
+  background-color: #202428;
 }
 
 body::-webkit-scrollbar-track {

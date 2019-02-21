@@ -9,6 +9,7 @@
 ///////////////
 
 $red: #e82637;
+$dark: #202428;
 
 //////////
 // Body //
@@ -27,7 +28,7 @@ body{
 		"header"
 		"main";
 	overflow-x: hidden;
-	background-color: black;
+	background-color: $dark;
 }
 
 ///////////////
