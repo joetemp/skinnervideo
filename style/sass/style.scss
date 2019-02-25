@@ -477,4 +477,23 @@ footer{
 		font-size: 2.5em;
 	}
 
+	footer{
+		height: 6vh;
+	}
+
+	#copyright{
+		line-height: 6vh;
+		font-size: 1.75em;
+	}
+
+	#social{
+		// No idea why these fuckers need top padding.
+		padding-top: 0.5vh;	
+		line-height: 6vh;
+
+		li{
+			margin-left: 70px;
+		}
+	}
+
 }

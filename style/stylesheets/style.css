@@ -693,6 +693,23 @@ footer {
   p {
     font-size: 2.5em;
   }
+
+  footer {
+    height: 6vh;
+  }
+
+  #copyright {
+    line-height: 6vh;
+    font-size: 1.75em;
+  }
+
+  #social {
+    padding-top: 0.5vh;
+    line-height: 6vh;
+  }
+  #social li {
+    margin-left: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
