@@ -688,6 +688,10 @@ footer {
     line-height: 70px;
     font-size: 2em;
   }
+
+  p {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
