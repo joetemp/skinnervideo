@@ -605,52 +605,6 @@ footer {
     margin-left: 30px;
   }
 }
-@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #3d3d3d;
-  }
-
-  header {
-    grid-template-columns: 2.5% auto auto 2.5%;
-  }
-
-  header::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/citra.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  ul {
-    margin-left: 15%;
-  }
-
-  main {
-    grid-template-columns: auto 95% auto;
-  }
-
-  footer {
-    height: 40px;
-    grid-template-columns: 2.5% auto auto 2.5%;
-    background: rgba(0, 0, 0, 0.8);
-  }
-
-  #copyright {
-    font-size: 0.75em;
-    line-height: 40px;
-    color: #777;
-  }
-
-  #social {
-    line-height: 40px;
-  }
-  #social li {
-    padding-top: 2px;
-    margin-left: 30px;
-  }
-}
 @media all and (max-width: 800px) {
   header::before {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../assets/citra.png);
@@ -663,63 +617,7 @@ footer {
     background: rgba(0, 0, 0, 0.85);
   }
 }
-@media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
-  header::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../assets/citra.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  footer {
-    background: rgba(0, 0, 0, 0.85);
-  }
-}
 @media all and (max-width: 700px) {
-  body::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #3d3d3d;
-  }
-
-  header::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/citra.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  ul {
-    margin-left: 5%;
-    align-items: center;
-  }
-
-  li {
-    width: 50%;
-    max-width: 100px;
-  }
-
-  p {
-    padding: 20px 30px 20px 30px;
-    font-size: 1em;
-  }
-
-  h2 {
-    font-size: 2em;
-    height: 60px;
-    line-height: 60px;
-  }
-
-  #social li {
-    margin-left: 20px;
-  }
-}
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
   body::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;
