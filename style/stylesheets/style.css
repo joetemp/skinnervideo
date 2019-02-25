@@ -661,5 +661,23 @@ footer {
     margin-left: 20px;
   }
 }
+@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+  ul {
+    margin-left: 5%;
+    align-items: center;
+  }
+
+  li {
+    width: 50%;
+    max-width: 200px;
+    height: 60px;
+  }
+
+  a {
+    height: 100%;
+    line-height: 60px;
+    font-size: 1.5em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
