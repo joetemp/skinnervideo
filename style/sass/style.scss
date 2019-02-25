@@ -438,6 +438,11 @@ footer{
   	header{
   		height: 20vh;
   		padding: 0;
+		grid-template-columns: 2.5% 20vh auto 2.5%;
+	}
+
+  	nav{
+  		// background-color: blue;
   	}
 
 	header:before{
@@ -458,14 +463,14 @@ footer{
 		width: 50%;
 		// This seems like an elegant solution. 
 		max-width: 250px;
-		height: 70px;
+		height: 80px;
 		// background: purple;
 	}
 
 	a{
 		height: 100%;
-		line-height: 70px;
-		font-size: 2em;
+		line-height: 80px;
+		font-size: 2.25em;
 	}
 
 	p{

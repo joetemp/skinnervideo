@@ -665,6 +665,7 @@ footer {
   header {
     height: 20vh;
     padding: 0;
+    grid-template-columns: 2.5% 20vh auto 2.5%;
   }
 
   #logo {
@@ -680,13 +681,13 @@ footer {
   li {
     width: 50%;
     max-width: 250px;
-    height: 70px;
+    height: 80px;
   }
 
   a {
     height: 100%;
-    line-height: 70px;
-    font-size: 2em;
+    line-height: 80px;
+    font-size: 2.25em;
   }
 
   p {
