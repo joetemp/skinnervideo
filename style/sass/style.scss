@@ -128,13 +128,10 @@ ul{
 a{
 	text-decoration: none;
 	display: block;
-}
-
-a:link{
 	color: white;
 }
 
-a:visited{
+a:link{
 	color: white;
 }
 
@@ -145,7 +142,6 @@ a:hover{
 li{
 	width: 100px;
 	text-transform: uppercase;
-	color: white;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -158,10 +154,10 @@ li{
 	background-size: 100% 100%;
 	background-position: center;
 	color: black;
+}
 
-	a:visited{
-		color: black;
-	}
+.current:hover{
+	color: black;
 }
 
 //////////
