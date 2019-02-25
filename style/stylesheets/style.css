@@ -432,10 +432,6 @@ a {
   color: white;
 }
 
-a:link {
-  color: white;
-}
-
 a:hover {
   color: #e82637;
 }
