@@ -695,20 +695,19 @@ footer {
   }
 
   footer {
-    height: 6vh;
+    height: 8vh;
   }
 
   #copyright {
-    line-height: 6vh;
+    line-height: 8vh;
     font-size: 1.75em;
   }
 
-  #social {
-    padding-top: 0.5vh;
-    line-height: 6vh;
-  }
   #social li {
     margin-left: 70px;
+  }
+  #social a {
+    line-height: 8vh;
   }
 }
 

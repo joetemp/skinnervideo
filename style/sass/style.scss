@@ -478,21 +478,23 @@ footer{
 	}
 
 	footer{
-		height: 6vh;
+		height: 8vh;
 	}
 
 	#copyright{
-		line-height: 6vh;
+		line-height: 8vh;
 		font-size: 1.75em;
 	}
 
 	#social{
-		// No idea why these fuckers need top padding.
-		padding-top: 0.5vh;	
-		line-height: 6vh;
 
 		li{
 			margin-left: 70px;
+		}
+
+		// This is where the footer links specifically are controlled.
+		a{
+			line-height: 8vh;
 		}
 	}
 
