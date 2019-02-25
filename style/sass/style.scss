@@ -436,7 +436,8 @@ footer{
   and (-webkit-min-device-pixel-ratio: 2) { 
 
   	header{
-  		height: 18%;
+  		height: 20%;
+  		padding: 0;
   	}
 
 	header:before{
@@ -444,7 +445,7 @@ footer{
   	}
 
   	#logo{
-  		margin-top: 1vh;
+  		margin-top: 2vh;
   		height: 16vh;
   	}
 

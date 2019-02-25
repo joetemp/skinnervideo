@@ -663,11 +663,12 @@ footer {
 }
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
-    height: 18%;
+    height: 20%;
+    padding: 0;
   }
 
   #logo {
-    margin-top: 1vh;
+    margin-top: 2vh;
     height: 16vh;
   }
 
