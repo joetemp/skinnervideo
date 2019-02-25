@@ -435,9 +435,17 @@ footer{
   and (max-device-width: 700px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
-  // This works!
+  	header{
+  		height: 18%;
+  	}
+
 	header:before{
   		// background: red;
+  	}
+
+  	#logo{
+  		margin-top: 1vh;
+  		height: 16vh;
   	}
 
 	ul{
@@ -448,15 +456,15 @@ footer{
 	li{
 		width: 50%;
 		// This seems like an elegant solution. 
-		max-width: 200px;
-		height: 60px;
+		max-width: 250px;
+		height: 70px;
 		// background: purple;
 	}
 
 	a{
 		height: 100%;
-		line-height: 60px;
-		font-size: 1.5em;
+		line-height: 70px;
+		font-size: 2em;
 	}
 
 }

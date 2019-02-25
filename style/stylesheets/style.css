@@ -662,6 +662,15 @@ footer {
   }
 }
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    height: 18%;
+  }
+
+  #logo {
+    margin-top: 1vh;
+    height: 16vh;
+  }
+
   ul {
     margin-left: 5%;
     align-items: center;
@@ -669,14 +678,14 @@ footer {
 
   li {
     width: 50%;
-    max-width: 200px;
-    height: 60px;
+    max-width: 250px;
+    height: 70px;
   }
 
   a {
     height: 100%;
-    line-height: 60px;
-    font-size: 1.5em;
+    line-height: 70px;
+    font-size: 2em;
   }
 }
 
