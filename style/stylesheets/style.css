@@ -661,10 +661,5 @@ footer {
     margin-left: 20px;
   }
 }
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
-  header:before {
-    background: red;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
