@@ -281,6 +281,55 @@ footer{
 	}
 }
 
+////////////
+// 1024px //
+////////////
+@media only screen and (max-width: 1024px) {
+
+}
+
+///////////////////
+// 1024px Retina //
+///////////////////
+@media only screen 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+///////////
+// 800px //
+///////////
+@media only screen and (max-width: 800px) {
+
+}
+
+//////////////////
+// 800px Retina //
+//////////////////
+@media only screen 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+///////////
+// 700px //
+///////////
+@media only screen and (max-width: 700px) {
+
+}
+
+//////////////////
+// 700px Retina //
+//////////////////
+@media only screen 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+
 ///////////////////////
 // Old Media Queries //
 ///////////////////////
