@@ -370,14 +370,14 @@ body::-webkit-scrollbar-thumb {
 
 header {
   position: fixed;
-  height: 16%;
+  height: 16vh;
   min-height: 100px;
   width: 100%;
   top: 0;
   grid-area: header;
   display: grid;
-  grid-template-columns: 5% auto 500px 5%;
-  grid-template-areas: ". logo nav .";
+  grid-template-columns: 5% auto auto 500px 5%;
+  grid-template-areas: ". logo . nav .";
   box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 0 15px 0;
   z-index: 1000;
@@ -399,7 +399,6 @@ header::before {
 
 #logo {
   height: 16vh;
-  width: 16vh;
   grid-area: logo;
 }
 #logo img {
@@ -415,34 +414,31 @@ nav {
 ul {
   padding: 0;
   margin: 0;
-  margin-left: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
   grid-area: ul;
   list-style: none;
-  text-align: center;
-  line-height: 30px;
 }
 
 a {
   text-decoration: none;
   display: block;
   color: white;
-}
-
-a:hover {
-  color: #e82637;
-}
-
-li {
   width: 100px;
+  height: 30px;
   text-transform: uppercase;
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
-  height: 30px;
+  font-size: 1em;
+  text-align: center;
+  line-height: 30px;
+}
+
+a:hover {
+  color: #e82637;
 }
 
 .current {
@@ -532,10 +528,9 @@ footer {
 }
 
 #copyright {
-  margin: 0;
   padding: 0;
   grid-area: copyright;
-  line-height: 5vh;
+  line-height: 5.5vh;
   font-size: 1em;
   color: #666;
   font-family: proxima-nova, sans-serif;
@@ -546,169 +541,14 @@ footer {
 
 #social {
   justify-content: flex-end;
-  margin: 0;
-  padding-top: 0;
   grid-area: social;
-  line-height: 5.5vh;
 }
-#social li {
+#social a {
   height: 100%;
   width: auto;
-  padding: 0;
   font-size: 2em;
   margin-left: 30px;
-}
-
-@media all and (max-width: 1024px) {
-  body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #3d3d3d;
-  }
-
-  header {
-    grid-template-columns: 2.5% auto auto 2.5%;
-  }
-
-  header::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/citra.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  ul {
-    margin-left: 15%;
-  }
-
-  main {
-    grid-template-columns: auto 95% auto;
-  }
-
-  footer {
-    height: 40px;
-    grid-template-columns: 2.5% auto auto 2.5%;
-    background: rgba(0, 0, 0, 0.8);
-  }
-
-  #copyright {
-    font-size: 0.75em;
-    line-height: 40px;
-    color: #777;
-  }
-
-  #social {
-    line-height: 40px;
-  }
-  #social li {
-    padding-top: 2px;
-    margin-left: 30px;
-  }
-}
-@media all and (max-width: 800px) {
-  header::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../assets/citra.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  footer {
-    background: rgba(0, 0, 0, 0.85);
-  }
-}
-@media all and (max-width: 700px) {
-  body::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #3d3d3d;
-  }
-
-  header::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/citra.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  ul {
-    margin-left: 5%;
-    align-items: center;
-  }
-
-  li {
-    width: 50%;
-    max-width: 100px;
-  }
-
-  p {
-    padding: 20px 30px 20px 30px;
-    font-size: 1em;
-  }
-
-  h2 {
-    font-size: 2em;
-    height: 60px;
-    line-height: 60px;
-  }
-
-  #social li {
-    margin-left: 20px;
-  }
-}
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
-  header {
-    height: 20vh;
-    padding: 0;
-    grid-template-columns: 2.5% 18vh auto 2.5%;
-  }
-
-  #logo {
-    margin-top: 2vh;
-    height: 16vh;
-  }
-
-  ul {
-    margin-left: 5%;
-    align-items: center;
-  }
-
-  li {
-    width: 50%;
-    max-width: 270px;
-    height: 90px;
-  }
-
-  a {
-    height: 100%;
-    line-height: 90px;
-    font-size: 2.5em;
-  }
-
-  p {
-    font-size: 2.5em;
-  }
-
-  footer {
-    height: 8vh;
-  }
-
-  #copyright {
-    line-height: 8vh;
-    font-size: 1.75em;
-  }
-
-  #social li {
-    margin-left: 70px;
-  }
-  #social a {
-    line-height: 8vh;
-  }
+  line-height: 5.5vh;
 }
 
 /*# sourceMappingURL=style.css.map */
