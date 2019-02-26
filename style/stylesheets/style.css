@@ -551,4 +551,31 @@ footer {
   line-height: 5.5vh;
 }
 
+@media only screen and (max-width: 1024px) {
+  header {
+    grid-template-columns: 2.5% auto auto 50vw 2.5%;
+  }
+
+  header::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/citra.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  main {
+    grid-template-columns: auto 95% auto;
+  }
+
+  footer {
+    grid-template-columns: 2.5% auto auto 2.5%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  #copyright {
+    font-size: 0.75em;
+    color: #777;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
