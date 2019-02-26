@@ -1,0 +1,60 @@
+/////////////////////////////////
+// 700px Media - iPhone/Mobile //
+/////////////////////////////////
+
+@media all and (max-width: 700px) {
+
+	body::-webkit-scrollbar
+	{
+	    width: 10px;
+	    background-color: #F5F5F5;
+	}
+
+	body::-webkit-scrollbar-thumb
+	{
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	    background-color: #3d3d3d;
+	}
+
+	header::before{
+		// Tinted image
+		background: 
+			linear-gradient(
+	    		rgba(black, 0.8), 
+	    		rgba(black, 0.8)
+	    	),
+			url(../../assets/citra.png);
+		background-size: cover;
+		background-position: center;	
+		background-attachment: fixed;
+	}
+
+	ul{
+		margin-left: 5%;
+		align-items: center;
+	}
+
+	li{
+		width: 50%;
+		// This seems like an elegant solution. 
+		max-width: 100px;
+	}
+
+	p{
+		padding: 20px 30px 20px 30px; 
+		font-size: 1em;
+	}
+
+	h2{
+		font-size: 2em;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	#social{
+		li{
+			margin-left: 20px;
+		}
+	}
+}
