@@ -272,6 +272,10 @@ footer{
 	}
 }
 
+////////////
+// 1024px //
+////////////
+
 @media only screen and (max-width: 1024px) {
 	nav{
 		// background: red;
@@ -310,12 +314,54 @@ footer{
 
 }
 
+///////////////////
+// 1024px Retina //
+///////////////////
+
 @media only screen 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
   	nav{
   		// background: blue;
+  	}
+
+}
+
+///////////
+// 800px //
+///////////
+
+@media only screen and (max-width: 800px) {
+	header:before{
+		background: red;
+	}
+
+	ul{
+		align-items: center;
+	}
+}
+
+//////////////////
+// 800px Retina //
+//////////////////
+
+@media only screen 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	header:before{
+  		background: blue;
+  	}
+
+  	ul{
+  		align-items: center;
+  	}
+
+  	li{
+  		width: 50%;
+  		background: red;
+  		text-align: center;
   	}
 
 }
