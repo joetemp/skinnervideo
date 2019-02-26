@@ -61,15 +61,16 @@ body::-webkit-scrollbar-thumb
 
 header{
 	position: fixed;
-	height: 16vh;
+	height: 16%;
 	min-height: 100px;
 	width: 100%;
 	top: 0;
 	grid-area: header; 
 	display: grid;
-	grid-template-columns: 5% auto auto 500px 5%;
+	// Let's revisit the width of the logo column... or if it needs a width at all.
+	grid-template-columns: 5% auto 500px 5%;
 	grid-template-areas: 
-		". logo . nav .";
+		". logo nav .";
 	box-shadow: 0px 3px 10px 3px rgba(black, 0.2);
 	padding: 10px 0 15px 0;
 	z-index: 1000;
@@ -90,7 +91,9 @@ header::before{
 }
 
 #logo{
+	// height: 100%; 
 	height: 16vh;
+	width: 16vh;
 	grid-area: logo;
 	// background: rgba(blue, 0.5);
 
@@ -102,42 +105,44 @@ header::before{
 nav{
 	grid-area: nav;
 	display: grid;
+	// background: rgba(orange, 0.3);
 	grid-template-areas:
 		"ul";
-
-	// background: red;
 }
 
 ul{
 	padding: 0; 
 	margin: 0;
-	//margin-left: 20px;
+	margin-left: 20px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: flex-end;
 	grid-area: ul;
 	list-style: none;
-	// background-color: rgba(white, 0.5);
+	// background-color: green;
+	text-align: center;
+	line-height: 30px;
 }
 
 a{
 	text-decoration: none;
 	display: block;
 	color: white;
-	width: 100px;
-	height: 30px;
-	text-transform: uppercase;
-	font-family: proxima-nova, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1em;
-	text-align: center;
-	line-height: 30px;
 }
 
 a:hover{
 	color: $red;
+}
+
+li{
+	width: 100px;
+	text-transform: uppercase;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	// background: purple;
+	height: 30px;
 }
 
 .current{
@@ -237,15 +242,17 @@ footer{
 	height: 5vh;
 	width: 100%;
 	bottom: 0;
+	// background: rgba(green, 0.3);
 	background: rgba(black, 0.6);
 	z-index: 1000; 
 }
 
 #copyright{
+	margin: 0;
 	padding: 0;
 	grid-area: copyright;
-	// For some reason... this has to be set higher than the height of footer to be centered.
-	line-height: 5.5vh;
+	// background: rgba(red, 0.3);
+	line-height: 5vh;
 	font-size: 1em;
 	// Most metal fucking gray there is!
 	color: #666;
@@ -253,127 +260,35 @@ footer{
 	font-weight: 400;
 	font-style: normal;
 	text-transform: uppercase;
-	// background: rgba(red, 0.3);
 }
 
 #social{
 	justify-content: flex-end;
+	margin: 0;
+	padding-top: 0;
 	grid-area: social;
+	// Logos look more centered at 5.5vh for some reason.
+	line-height: 5.5vh;
 	// background: rgba(blue, 0.3);
 
-	a{
+	li{
 		height: 100%;
 		width: auto;
+		padding: 0;
 		font-size: 2em;
 		margin-left: 30px;
-		// For some reason... this has to be set higher than the height of footer to be centered.
-		line-height: 5.5vh;
-		// background: rgba(red, 0.5);
-	}
-}
-
-////////////
-// 1024px //
-////////////
-
-@media only screen and (max-width: 1024px) {
-	nav{
 		// background: red;
 	}
-
-	header{
-		grid-template-columns: 2.5% auto auto 50vw 2.5%;
-	}
-
-	header::before{
-		// Tinted image
-		background: 
-			linear-gradient(
-	    		rgba(black, 0.6), 
-	    		rgba(black, 0.6)
-	    	),
-			url(../../assets/citra.png);
-		background-size: cover;
-		background-position: center;	
-		background-attachment: fixed;
-	}
-
-	main{
-		grid-template-columns: auto 95% auto;
-	}
-
-	footer{
-		grid-template-columns: 2.5% auto auto 2.5%; 
-		background: rgba(black, 0.8);
-	}
-
-	#copyright{
-		font-size: 0.75em;
-		color: #777;
-	}
-
-}
-
-///////////////////
-// 1024px Retina //
-///////////////////
-
-@media only screen 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-  	nav{
-  		// background: blue;
-  	}
-
-}
-
-///////////
-// 800px //
-///////////
-
-@media only screen and (max-width: 800px) {
-	header:before{
-		background: red;
-	}
-
-	ul{
-		align-items: center;
-	}
-}
-
-//////////////////
-// 800px Retina //
-//////////////////
-
-@media only screen 
-  and (max-device-width: 800px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-  	header:before{
-  		background: blue;
-  	}
-
-  	ul{
-  		align-items: center;
-  	}
-
-  	li{
-  		width: 50%;
-  		background: red;
-  		text-align: center;
-  	}
-
 }
 
 ///////////////////////
 // Old Media Queries //
 ///////////////////////
 
-// @import "1024px";
+@import "1024px";
 
-// @import "800px";
+@import "800px";
 
-// @import "iphone";
+@import "iphone";
 
-// @import "iphone_retina";
+@import "iphone_retina";
