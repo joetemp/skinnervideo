@@ -585,5 +585,28 @@ footer {
     color: #777;
   }
 }
+@media only screen and (max-width: 800px) {
+  header {
+    grid-template-columns: 2.5% auto auto 50vw 2.5%;
+  }
+
+  nav {
+    background: red;
+  }
+  nav a {
+    background: blue;
+    margin-left: calc(50% - 50px);
+    width: 100px;
+    height: 30px;
+  }
+
+  ul {
+    align-items: center;
+  }
+
+  li {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
