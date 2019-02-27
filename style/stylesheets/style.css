@@ -370,7 +370,7 @@ body::-webkit-scrollbar-thumb {
 
 header {
   position: fixed;
-  height: 16%;
+  height: 16vh;
   min-height: 100px;
   width: 100%;
   top: 0;
@@ -612,9 +612,13 @@ footer {
     grid-template-columns: 2.5% auto auto 50vw 2.5%;
   }
 
-  nav {
-    background: red;
+  header:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/citra.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
+
   nav a {
     margin-left: calc(50% - 60px);
     width: 120px;
@@ -636,6 +640,10 @@ footer {
     font-size: 1.5em;
   }
 
+  footer {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
   #social li {
     font-size: 2.5em;
     margin-left: 40px;
@@ -647,7 +655,7 @@ footer {
 }
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
-    grid-template-columns: 2.5% 16vh 2.5vw auto 2.5%;
+    grid-template-columns: 2.5% 16vh 5vw auto 2.5%;
   }
 
   nav a {
@@ -659,12 +667,34 @@ footer {
 
   li {
     max-width: 250px;
-    background: blue;
     height: 80px;
   }
 
   ul {
     line-height: 80px;
+  }
+
+  p {
+    font-size: 2.5em;
+  }
+
+  footer {
+    height: 6vh;
+  }
+
+  #copyright {
+    line-height: 6vh;
+    font-size: 1.5em;
+  }
+
+  #social {
+    line-height: 6.5vh;
+  }
+  #social li {
+    margin-left: 70px;
+  }
+  #social li a {
+    font-size: 1.75em;
   }
 }
 
