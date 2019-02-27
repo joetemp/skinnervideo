@@ -589,11 +589,7 @@ footer {
     grid-template-columns: 2.5% auto auto 50vw 2.5%;
   }
 
-  nav {
-    background: red;
-  }
   nav a {
-    background: blue;
     margin-left: calc(50% - 50px);
     width: 100px;
     height: 30px;
@@ -605,6 +601,10 @@ footer {
 
   li {
     width: 50%;
+  }
+
+  #copyright {
+    font-size: 0.85em;
   }
 }
 @media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {

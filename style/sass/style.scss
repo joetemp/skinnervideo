@@ -342,10 +342,8 @@ footer{
 	}
 
 	nav{
-		background: red;
 
 		a{
-			background: blue;
 			margin-left: calc(50% - 50px);
 			width: 100px;
 			height: 30px;
@@ -358,6 +356,10 @@ footer{
 
 	li{
 		width: 50%;
+	}
+
+	#copyright{
+		font-size: 0.85em;
 	}
 
 	// Move the .current highlight banner to a. That way... we can have the li buttons be WIDE AS FUCK... but not stretch the image. This thought brought to you by weed.
