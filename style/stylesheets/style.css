@@ -697,5 +697,36 @@ footer {
     font-size: 1.75em;
   }
 }
+@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header {
+    grid-template-columns: 2.5% 16vh 5vw auto 2.5%;
+  }
+
+  nav {
+    background: blue;
+  }
+  nav a {
+    max-width: 150px;
+    height: 45px;
+    background: yellow;
+    font-size: 1.5em;
+  }
+
+  footer {
+    background: red;
+    height: 10vh;
+  }
+
+  ul {
+    line-height: 45px;
+  }
+
+  li {
+    width: 25%;
+    max-width: 150px;
+    height: 45px;
+    background: orange;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
