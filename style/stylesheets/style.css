@@ -608,25 +608,26 @@ footer {
   }
 }
 @media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
-  nav {
-    background: blue;
-  }
   nav a {
-    background: red;
     margin-left: calc(50% - 60px);
     width: 120px;
     height: 40px;
+    margin-top: -5px;
+    font-size: 1.25em;
   }
 
   ul {
     align-items: center;
-    background: green;
     margin-left: 0;
     line-height: 40px;
   }
 
   li {
     width: 50%;
+  }
+
+  p {
+    font-size: 1.5em;
   }
 
   #social li {

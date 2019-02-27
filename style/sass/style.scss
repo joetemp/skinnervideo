@@ -371,25 +371,29 @@ footer{
   and (-webkit-min-device-pixel-ratio: 2) { 
 
   	nav{
-  		background: blue;
 
   		a{
-			background: red;
 			margin-left: calc(50% - 60px);
 			width: 120px;
 			height: 40px;
+			// This seems to be necessary because all list items shift down when they get bigger. Why? There seems to be PLENTY of space.
+			margin-top: -5px;
+			font-size: 1.25em;
 		}
   	}
 
   	ul{
 		align-items: center;
-		background: green;
 		margin-left: 0;
 		line-height: 40px;
 	}
 
 	li{
 		width: 50%;
+	}
+
+	p{
+		font-size: 1.5em;
 	}
 
 	#social{
@@ -402,7 +406,6 @@ footer{
 	#copyright{
 		font-size: 1em;	
 	}
-
 }
 
 ///////////
