@@ -415,7 +415,6 @@ nav {
 ul {
   padding: 0;
   margin: 0;
-  margin-left: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -602,6 +601,28 @@ footer {
 
   ul {
     align-items: center;
+  }
+
+  li {
+    width: 50%;
+  }
+}
+@media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    background: blue;
+  }
+  nav a {
+    background: red;
+    margin-left: calc(50% - 66px);
+    width: 133px;
+    height: 40px;
+  }
+
+  ul {
+    align-items: center;
+    background: green;
+    margin-left: 0;
+    line-height: 40px;
   }
 
   li {
