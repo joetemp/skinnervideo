@@ -378,8 +378,6 @@ footer{
 			margin-left: calc(50% - 60px);
 			width: 120px;
 			height: 40px;
-			// This seems to be necessary because all list items shift down when they get bigger. Why? There seems to be PLENTY of space.
-			margin-top: -5px;
 			font-size: 1.25em;
 		}
   	}
