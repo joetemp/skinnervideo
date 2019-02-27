@@ -501,16 +501,19 @@ footer{
   and (orientation: landscape) {
 
   	header{
-		grid-template-columns: 2.5% 16vh 5vw auto 2.5%;
+		grid-template-columns: 2.5% 18vh 15vw auto 2.5%;
+	}
+
+	#logo{
+		height: 18vh;
+		width: 18vh;
 	}
 
 	nav{
-		background: blue;
 
 		a{
 			max-width: 150px;
 			height: 45px;
-			background: yellow;
 			font-size: 1.5em;
 		}
 	}
@@ -528,7 +531,6 @@ footer{
   		width: 25%;
   		max-width: 150px;
   		height: 45px;
-  		background: orange;
   	}
 
 }
