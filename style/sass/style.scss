@@ -372,7 +372,12 @@ footer{
   and (max-device-width: 800px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+  	header{
+		grid-template-columns: 2.5% auto auto 50vw 2.5%;
+	}
+
   	nav{
+  		background: red;
 
   		a{
 			margin-left: calc(50% - 60px);
@@ -421,6 +426,29 @@ footer{
 @media only screen 
   and (max-device-width: 700px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	header{
+		grid-template-columns: 2.5% 16vh 2.5vw auto 2.5%;
+	}
+
+	nav{
+		a{
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			font-size: 2em;
+		}
+	}
+
+	li{
+		max-width: 250px;
+		background: blue;
+		height: 80px;
+	}
+
+	ul{
+		line-height: 80px;
+	}
 
 }
 
