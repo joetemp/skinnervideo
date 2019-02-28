@@ -686,6 +686,10 @@ footer {
     margin-top: calc(40vh + 40px);
   }
 
+  article:last-of-type {
+    margin-bottom: 20vh;
+  }
+
   h2 {
     height: 16vh;
     line-height: 16vh;
