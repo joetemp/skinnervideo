@@ -281,56 +281,7 @@ footer{
 	}
 }
 
-////////////
-// 1024px //
-////////////
-@media only screen and (max-width: 1024px) {
-
-	header{
-		grid-template-columns: 2.5% auto auto 500px 2.5%;
-	}
-
-	header:before{
-		// Tinted image
-		background: 
-			linear-gradient(
-	    		rgba(black, 0.6), 
-	    		rgba(black, 0.6)
-	    	),
-			url("../../assets/citra.png");
-		background-size: cover;
-		background-position: center;	
-		background-attachment: fixed;
-	}
-
-	nav{
-		//background: red;
-	}
-
-	main{
-		grid-template-columns: auto 95% auto;
-	}
-
-	footer{
-		grid-template-columns: 2.5% auto auto 2.5%; 
-		background: rgba(black, 0.8);
-	}
-
-	#copyright{
-		font-size: 0.75em;
-		color: #777;
-	}
-
-}
-
-///////////////////
-// 1024px Retina //
-///////////////////
-@media only screen 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
+@import "1024px";
 
 ///////////
 // 800px //
