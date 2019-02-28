@@ -1,6 +1,7 @@
 ////////////
 // 1024px //
 ////////////
+
 @media only screen and (max-width: 1024px) {
 
 	header{
@@ -43,8 +44,24 @@
 ///////////////////
 // 1024px Retina //
 ///////////////////
+
 @media only screen 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+  	// Stuff goes here.
+
 }
+
+///////////////////////////////
+// 1024px Retina - Landscape //
+///////////////////////////////
+
+@media only screen 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  	// Stuff goes here.
+
+ }

@@ -1,3 +1,13 @@
+///////////
+// 500px //
+///////////
+
+@media only screen and (max-width: 500px) {
+
+	// Stuff goes here.
+
+}
+
 //////////////////
 // 500px Retina //
 //////////////////
@@ -68,4 +78,17 @@
 
 		}
 	}
+}
+
+//////////////////////////////
+// 500px Retina - Landscape //
+//////////////////////////////
+
+@media only screen 
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  	// Stuff goes here.
+
 }
