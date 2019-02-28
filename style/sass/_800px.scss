@@ -103,20 +103,23 @@
   and (orientation: landscape) {
 
   	header{
-		grid-template-columns: 2.5% 18vh 15vw auto 2.5%;
+		grid-template-columns: 2.5% 20vh 15vw auto 2.5%;
+		padding: 10px 0 10px 0;
+		height: 20vh;
 	}
 
 	#logo{
-		height: 18vh;
-		width: 18vh;
+		height: 20vh;
+		width: 20vh;
 	}
 
 	nav{
 
 		a{
-			max-width: 150px;
+			width: 150px;
 			height: 45px;
 			font-size: 1.5em;
+			margin-left: 0;
 		}
 	}
 
@@ -128,6 +131,16 @@
   		width: 25%;
   		max-width: 150px;
   		height: 45px;
+  	}
+
+  	article:first-of-type{
+  		margin-top: calc(40vh + 40px);
+  	}
+
+  	h2{
+  		height: 16vh;
+  		line-height: 16vh;
+  		font-size: 4em;
   	}
 
   	p{

@@ -6,7 +6,13 @@
   and (-webkit-min-device-pixel-ratio: 2) { 
 
   	header{
-		grid-template-columns: 2.5% 16vh 15vw auto 2.5%;
+		grid-template-columns: 2.5% 17vh 15vw auto 2.5%;
+		padding: 20px 0 20px 0;
+		height: 17vh;
+	}
+
+	#logo{
+		height: 17vh;
 	}
 
 	nav{
@@ -27,8 +33,14 @@
 		line-height: 80px;
 	}
 
+	article:first-of-type{
+		margin-top: calc(34vh + 80px);
+	}
+
 	h2{
-		background: red;
+		height: 10vh;
+		line-height: 10vh;
+		font-size: 5em;
 	}
 
 	p{
