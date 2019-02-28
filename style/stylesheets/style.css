@@ -761,6 +761,10 @@ footer {
     line-height: 80px;
   }
 
+  h2 {
+    background: red;
+  }
+
   p {
     font-size: 2.5em;
   }
