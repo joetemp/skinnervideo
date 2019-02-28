@@ -702,7 +702,45 @@ footer {
     font-size: 1.1em;
   }
 }
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  nav a {
+    font-size: 1.5em;
+  }
+
+  ul {
+    line-height: 45px;
+  }
+
+  li {
+    width: 25%;
+    max-width: 150px;
+    height: 45px;
+  }
+
+  p {
+    font-size: 1.75em;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  #copyright {
+    line-height: 10vh;
+    font-size: 1em;
+  }
+
+  #social {
+    line-height: 10.5vh;
+  }
+  #social li {
+    margin-left: 40px;
+  }
+  #social li a {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     grid-template-columns: 2.5% 16vh 15vw auto 2.5%;
   }
@@ -744,44 +782,6 @@ footer {
   }
   #social li a {
     font-size: 1.75em;
-  }
-}
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  nav a {
-    font-size: 1.5em;
-  }
-
-  ul {
-    line-height: 45px;
-  }
-
-  li {
-    width: 25%;
-    max-width: 150px;
-    height: 45px;
-  }
-
-  p {
-    font-size: 1.75em;
-  }
-
-  footer {
-    height: 10vh;
-  }
-
-  #copyright {
-    line-height: 10vh;
-    font-size: 1em;
-  }
-
-  #social {
-    line-height: 10.5vh;
-  }
-  #social li {
-    margin-left: 40px;
-  }
-  #social li a {
-    font-size: 1.1em;
   }
 }
 
