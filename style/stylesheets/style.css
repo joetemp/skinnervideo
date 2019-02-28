@@ -697,7 +697,7 @@ footer {
     font-size: 1.75em;
   }
 }
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   header {
     grid-template-columns: 2.5% 18vh 15vw auto 2.5%;
   }
@@ -713,11 +713,6 @@ footer {
     font-size: 1.5em;
   }
 
-  footer {
-    background: red;
-    height: 10vh;
-  }
-
   ul {
     line-height: 45px;
   }
@@ -726,6 +721,29 @@ footer {
     width: 25%;
     max-width: 150px;
     height: 45px;
+  }
+
+  p {
+    font-size: 1.75em;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  #copyright {
+    line-height: 10vh;
+    font-size: 1em;
+  }
+
+  #social {
+    line-height: 10.5vh;
+  }
+  #social li {
+    margin-left: 40px;
+  }
+  #social li a {
+    font-size: 1.1em;
   }
 }
 
