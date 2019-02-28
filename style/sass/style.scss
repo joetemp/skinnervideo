@@ -67,7 +67,6 @@ header{
 	top: 0;
 	grid-area: header; 
 	display: grid;
-	// Let's revisit the width of the logo column... or if it needs a width at all.
 	grid-template-columns: 5% auto auto 500px 5%;
 	grid-template-areas: 
 		". logo . nav .";
@@ -267,7 +266,6 @@ footer{
 	margin: 0;
 	padding-top: 0;
 	grid-area: social;
-	// Logos look more centered at 5.5vh for some reason.
 	line-height: 5.5vh;
 	// background: rgba(blue, 0.3);
 
