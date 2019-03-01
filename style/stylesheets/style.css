@@ -344,8 +344,7 @@ html, body {
 body {
   background-image: url("../../assets/citra.png");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center top;
   grid-template-areas: "header" "main";
   overflow-x: hidden;
   background-color: #202428;
@@ -392,8 +391,7 @@ header::before {
   width: 100%;
   background-image: url("../../assets/citra.png");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center top;
   z-index: -1000;
 }
 
