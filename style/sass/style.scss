@@ -19,19 +19,10 @@ html, body{
 	//height: 100%;
 }
 
-html {
-    background: url("../../assets/citra.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    //overflow: hidden;
-}
 
 body{
 	//height: 100%;
-	//background-image: url("../../assets/citra.png");
+	background-image: url("../../assets/citra.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -39,7 +30,7 @@ body{
 		"header"
 		"main";
 	overflow-x: hidden;
-	//background-color: $dark;
+	background-color: $dark;
 }
 
 ///////////////
