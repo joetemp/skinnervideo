@@ -16,13 +16,11 @@ $dark: #202428;
 //////////
 
 html, body{
-	//height: 100%;
-	height: 100vh;
+	height: 100%;
 }
 
 body{
-	position: relative;
-	//background-image: url("../../assets/citra.png");
+	background-image: url("../../assets/citra.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -31,17 +29,6 @@ body{
 		"main";
 	overflow-x: hidden;
 	background-color: $dark;
-}
-
-body::before{
-	content: '';
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	background-image: url("../../assets/citra.png");
-	background-size: cover;
-	background-position: center;
-	z-index: -1000;
 }
 
 ///////////////
