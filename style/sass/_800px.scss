@@ -8,6 +8,19 @@
 		grid-template-columns: 2.5% auto auto 50vw 2.5%;
 	}
 
+	header:before{
+		// Tinted image
+		background: 
+			linear-gradient(
+	    		rgba(black, 0.8), 
+	    		rgba(black, 0.8)
+	    	),
+			url("../../assets/citra.png");
+		background-size: cover;
+		background-position: center;	
+		background-attachment: fixed;
+	}
+
 	nav{
 
 		a{
@@ -23,6 +36,10 @@
 
 	li{
 		width: 50%;
+	}
+
+	footer{
+		background: rgba(black, 0.9);
 	}
 
 	#copyright{

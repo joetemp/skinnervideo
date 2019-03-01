@@ -624,6 +624,13 @@ footer {
     grid-template-columns: 2.5% auto auto 50vw 2.5%;
   }
 
+  header:before {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/citra.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
   nav a {
     margin-left: calc(50% - 50px);
     width: 100px;
@@ -636,6 +643,10 @@ footer {
 
   li {
     width: 50%;
+  }
+
+  footer {
+    background: rgba(0, 0, 0, 0.9);
   }
 
   #copyright {
@@ -799,6 +810,36 @@ footer {
 
   #social {
     line-height: 11vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #content h2 {
+    font-size: 2.25em;
+    height: 10vh;
+    line-height: 10vh;
+  }
+  #content p {
+    padding: 25px;
+    font-size: 1em;
+  }
+
+  footer {
+    height: 6vh;
+  }
+
+  #copyright {
+    line-height: 6.5vh;
+    font-size: 0.75em;
+  }
+
+  #social {
+    line-height: 6.75vh;
+  }
+  #social li {
+    margin-left: 30px;
+  }
+  #social li a {
+    font-size: 1em;
   }
 }
 @media only screen and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
