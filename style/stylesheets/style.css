@@ -349,8 +349,6 @@ body {
   grid-template-areas: "header" "main";
   overflow-x: hidden;
   background-color: #202428;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 body::-webkit-scrollbar-track {
