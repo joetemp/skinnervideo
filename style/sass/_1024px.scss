@@ -31,7 +31,6 @@
 
 	footer{
 		grid-template-columns: 2.5% auto auto 2.5%; 
-		background: rgba(black, 0.8);
 	}
 
 	#copyright{
@@ -63,5 +62,64 @@
   and (orientation: landscape) {
 
   	// Stuff goes here.
+
+ }
+
+//////////////////////////////
+// 1024px Retina - Portrait //
+//////////////////////////////
+
+// This is specifically to target iPad Pro in protrait mode.
+
+@media only screen 
+  and (min-device-width: 800px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	header:before{
+		// Tinted image
+		background: 
+			linear-gradient(
+	    		rgba(black, 0.8), 
+	    		rgba(black, 0.8)
+	    	),
+			url("../../assets/citra.png");
+		background-size: cover;
+		background-position: center;	
+		background-attachment: fixed;
+	}
+
+  	nav{
+  		ul{
+  			//background: red;
+  			li{
+  				//background: yellow;
+  				height: 40px;
+  				width: 120px;
+	  			a{
+	  				width: 120px;
+					height: 40px;
+					font-size: 1.25em;
+					line-height: 40px;
+	  			}
+  			}		
+  		}
+  	}
+
+  	p{
+  		font-size: 1.75em;
+  	}
+
+  	#copyright{
+  		font-size: 1em;
+  	}
+
+  	#social{
+  		li{
+  			font-size: 3em;
+  			margin-left: 60px;
+  		}
+  	}
 
  }
