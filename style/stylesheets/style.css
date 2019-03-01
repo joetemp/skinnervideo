@@ -606,6 +606,10 @@ footer {
     font-size: 1.75em;
   }
 
+  footer {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
   #copyright {
     font-size: 1em;
   }
