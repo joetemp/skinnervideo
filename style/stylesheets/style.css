@@ -535,7 +535,7 @@ footer {
   padding: 0;
   grid-area: copyright;
   line-height: 5.5vh;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #666;
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
