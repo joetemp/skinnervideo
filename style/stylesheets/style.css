@@ -342,13 +342,24 @@ html, body {
 }
 
 body {
-  background-image: url("../../assets/citra.png");
+  position: relative;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   grid-template-areas: "header" "main";
   overflow-x: hidden;
   background-color: #202428;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/citra.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
 }
 
 body::-webkit-scrollbar-track {
