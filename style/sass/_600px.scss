@@ -28,6 +28,12 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-  	// Stuff goes here.
+  	#copyright{
+  		line-height: 10.5vh;
+  	}
+
+  	#social{
+  		line-height: 11vh;
+  	}
 
 }

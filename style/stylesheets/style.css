@@ -757,6 +757,15 @@ footer {
     font-size: 1.1em;
   }
 }
+@media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #copyright {
+    line-height: 10.5vh;
+  }
+
+  #social {
+    line-height: 11vh;
+  }
+}
 @media only screen and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     grid-template-columns: 2.5% 17vh 15vw auto 2.5%;
