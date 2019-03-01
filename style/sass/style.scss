@@ -29,6 +29,11 @@ body{
 		"main";
 	overflow-x: hidden;
 	background-color: $dark;
+
+	// Giving these a shot.
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+
 }
 
 ///////////////
