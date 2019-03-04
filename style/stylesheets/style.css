@@ -338,6 +338,7 @@ template {
 }
 
 body {
+  height: 100vh;
   background-image: url("../../assets/citra.png");
   background-size: cover;
   background-position: center;
