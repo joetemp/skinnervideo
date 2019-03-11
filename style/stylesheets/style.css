@@ -432,6 +432,15 @@ a:hover {
   color: #e82637;
 }
 
+.textlink {
+  color: red;
+  display: inline;
+}
+
+.textlink:hover {
+  color: red;
+}
+
 li {
   width: 100px;
   text-transform: uppercase;
