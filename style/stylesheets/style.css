@@ -555,6 +555,11 @@ footer {
   margin-left: 40px;
 }
 
+.textlink {
+  color: #e82637;
+  display: inline;
+}
+
 @media only screen and (max-width: 1024px) {
   header {
     grid-template-columns: 2.5% auto auto 500px 2.5%;
